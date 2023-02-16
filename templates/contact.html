@@ -1,7 +1,8 @@
-{% extends "base-page.html" %} 
+
+{% extends "base_page.html" %} 
 {% block content %}
 <body>
-  <link rel="stylesheet" href="style-2.css" />
+  <link rel="stylesheet" href="../static/style-2.css" /> -->
   <h2 class="contact"><strong>Contact</strong></h2>
   <h2 class="tel">Tel - <a href="tel:+48730064567">+48 730 064 567</a></h2>
   <h2 class="email">
@@ -10,12 +11,13 @@
   
    
   <h3 class="films"><strong>My favourite films:</strong></h3>
+  
   <ul>
     {% for film in films %}
     <li>{{film}}</li>
     {% endfor %}
   </ul>
-  
+
   
   <h2><form action="send">Send a message</form></h2>
   <textarea name="Send a message" cols="35" rows="7"></textarea>
